@@ -3,7 +3,7 @@ name = "py-es3"
 description = "A Python library for interacting with EasySave3 files."
 authors = [{ name = "Alex Nørgaard", email = "umbra@abstractumbra.dev" }]
 readme = "README.md"
-requires-python = ">=3.13,<4.0"
+requires-python = ">=3.10,<4.0"
 dependencies = ["pycryptodome>=3.23.0,<4"]
 license = "AGPL-3.0-or-later"
 license-files = ["LICEN[CS]E"]
@@ -12,6 +12,10 @@ classifiers = [
     "Intended Audience :: End Users/Desktop",
     "Natural Language :: English",
     "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Topic :: Games/Entertainment",
     "Typing :: Typed",
@@ -57,7 +61,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 125
-target-version = "py313"
+target-version = "py310"
 
 [tool.ruff.lint]
 preview = true
@@ -134,5 +138,5 @@ inline-quotes = "double"
 [tool.pyright]
 useLibraryCodeForTypes = true
 typeCheckingMode = "strict"
-pythonVersion = "3.13"
+pythonVersion = "3.10"
 include = ["py_es3/**/*.py", "examples/**/*.py"]
